@@ -1,0 +1,84 @@
+\hypertarget{classdijkstra_1_1Dijkstra}{}\doxysection{dijkstra.\+Dijkstra Class Reference}
+\label{classdijkstra_1_1Dijkstra}\index{dijkstra.Dijkstra@{dijkstra.Dijkstra}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdijkstra_1_1Dijkstra_a0b9227ddc4e28a39b5013167757e5650}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, graph)
+\item 
+def \mbox{\hyperlink{classdijkstra_1_1Dijkstra_a9f497acd07d2bf1df8e98388d1bdd16f}{find\+\_\+route}} (self, start, end)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdijkstra_1_1Dijkstra_a35d04c8211eaf8ca43a073d28b4b284c}{generate\+\_\+path}} (parents, start, end)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdijkstra_1_1Dijkstra_ab5786e8e32d625687957aa21e1760513}\label{classdijkstra_1_1Dijkstra_ab5786e8e32d625687957aa21e1760513}} 
+{\bfseries graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Dijkstra algorithm.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdijkstra_1_1Dijkstra_a0b9227ddc4e28a39b5013167757e5650}\label{classdijkstra_1_1Dijkstra_a0b9227ddc4e28a39b5013167757e5650}} 
+\index{dijkstra.Dijkstra@{dijkstra.Dijkstra}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dijkstra.Dijkstra@{dijkstra.Dijkstra}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def dijkstra.\+Dijkstra.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{graph }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor of Dijkstra object.
+
+Args:
+    graph (dict): example graph format: #{'0': {'1': {'weight': 2}, 
+                                # '0': {'weight': 4}}, 
+                                # '1': {'0': {'weight': 2}, 
+                                # '2': {'weight': 4}}, 
+                                # '2': {'weight': 3}}, 
+                                # '2': {'1': {'weight': 3}, 
+                                # '3': {'weight': 5}, 
+                                # '3': {'2': {'weight': 5}}}
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdijkstra_1_1Dijkstra_a9f497acd07d2bf1df8e98388d1bdd16f}\label{classdijkstra_1_1Dijkstra_a9f497acd07d2bf1df8e98388d1bdd16f}} 
+\index{dijkstra.Dijkstra@{dijkstra.Dijkstra}!find\_route@{find\_route}}
+\index{find\_route@{find\_route}!dijkstra.Dijkstra@{dijkstra.Dijkstra}}
+\doxysubsubsection{\texorpdfstring{find\_route()}{find\_route()}}
+{\footnotesize\ttfamily def dijkstra.\+Dijkstra.\+find\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start,  }\item[{}]{end }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    start (string): Start node of graph.
+    end (string): Target node of graph.
+
+Returns:
+    visited (list): List of all visited nodes from start to end.
+    parents (list): List of  all nodes from start to end with matched previous nodes. Kinda hard to explain :(
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdijkstra_1_1Dijkstra_a35d04c8211eaf8ca43a073d28b4b284c}\label{classdijkstra_1_1Dijkstra_a35d04c8211eaf8ca43a073d28b4b284c}} 
+\index{dijkstra.Dijkstra@{dijkstra.Dijkstra}!generate\_path@{generate\_path}}
+\index{generate\_path@{generate\_path}!dijkstra.Dijkstra@{dijkstra.Dijkstra}}
+\doxysubsubsection{\texorpdfstring{generate\_path()}{generate\_path()}}
+{\footnotesize\ttfamily def dijkstra.\+Dijkstra.\+generate\+\_\+path (\begin{DoxyParamCaption}\item[{}]{parents,  }\item[{}]{start,  }\item[{}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Formatting the shortest path between start and end.
+
+Args:
+    parents (list): List of parents from find_route() function.
+    start (string): Start node.
+    end (string): End node.
+
+Returns:
+    path (list): Shortest path.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dijkstra.\+py\end{DoxyCompactItemize}

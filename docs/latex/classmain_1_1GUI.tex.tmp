@@ -1,0 +1,114 @@
+\hypertarget{classmain_1_1GUI}{}\doxysection{main.\+G\+UI Class Reference}
+\label{classmain_1_1GUI}\index{main.GUI@{main.GUI}}
+
+
+Inheritance diagram for main.\+G\+UI\+:
+% FIG 0
+
+
+Collaboration diagram for main.\+G\+UI\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_a37efd0ccacea9acc6b18c5538067361f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_adc8b92629c0f6be203e5d50300315366}{setup\+\_\+gui}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_ac0135c76362d27370b8dc509b620d642}{show\+\_\+dialog}} (self, message)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_a43bb6e92cf77570f6d2425ac020460f9}{add\+\_\+new\+\_\+node}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_a7213760517223628bd790670125ffdf9}{connect\+\_\+nodes}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_a2e1859a2a273dbe328ce078617208435}{run}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1GUI_a95e2e1a8475736e7dbc05fc6e806f8c2}{reset}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1GUI_adf4697755b4810c2cb3e09274206e12b}\label{classmain_1_1GUI_adf4697755b4810c2cb3e09274206e12b}} 
+{\bfseries form}
+\item 
+\mbox{\Hypertarget{classmain_1_1GUI_ac8b7631cb632f000cd6ad8dbe9480f46}\label{classmain_1_1GUI_ac8b7631cb632f000cd6ad8dbe9480f46}} 
+{\bfseries G}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Main GUI class to handle UI and controller functions.
+
+Args:
+    QtWidgets.QMainWindow()
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain_1_1GUI_a37efd0ccacea9acc6b18c5538067361f}\label{classmain_1_1GUI_a37efd0ccacea9acc6b18c5538067361f}} 
+\index{main.GUI@{main.GUI}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor of GUI.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1GUI_a43bb6e92cf77570f6d2425ac020460f9}\label{classmain_1_1GUI_a43bb6e92cf77570f6d2425ac020460f9}} 
+\index{main.GUI@{main.GUI}!add\_new\_node@{add\_new\_node}}
+\index{add\_new\_node@{add\_new\_node}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{add\_new\_node()}{add\_new\_node()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+add\+\_\+new\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adding a new node to the Graph. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1GUI_a7213760517223628bd790670125ffdf9}\label{classmain_1_1GUI_a7213760517223628bd790670125ffdf9}} 
+\index{main.GUI@{main.GUI}!connect\_nodes@{connect\_nodes}}
+\index{connect\_nodes@{connect\_nodes}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{connect\_nodes()}{connect\_nodes()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+connect\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connects two nodes with a given weight. 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1GUI_a95e2e1a8475736e7dbc05fc6e806f8c2}\label{classmain_1_1GUI_a95e2e1a8475736e7dbc05fc6e806f8c2}} 
+\index{main.GUI@{main.GUI}!reset@{reset}}
+\index{reset@{reset}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resets the existing graph.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1GUI_a2e1859a2a273dbe328ce078617208435}\label{classmain_1_1GUI_a2e1859a2a273dbe328ce078617208435}} 
+\index{main.GUI@{main.GUI}!run@{run}}
+\index{run@{run}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes source and destination from user and runs the Dijkstra algorithm to calculate shortest path.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1GUI_adc8b92629c0f6be203e5d50300315366}\label{classmain_1_1GUI_adc8b92629c0f6be203e5d50300315366}} 
+\index{main.GUI@{main.GUI}!setup\_gui@{setup\_gui}}
+\index{setup\_gui@{setup\_gui}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{setup\_gui()}{setup\_gui()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+setup\+\_\+gui (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializer of GUI.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1GUI_ac0135c76362d27370b8dc509b620d642}\label{classmain_1_1GUI_ac0135c76362d27370b8dc509b620d642}} 
+\index{main.GUI@{main.GUI}!show\_dialog@{show\_dialog}}
+\index{show\_dialog@{show\_dialog}!main.GUI@{main.GUI}}
+\doxysubsubsection{\texorpdfstring{show\_dialog()}{show\_dialog()}}
+{\footnotesize\ttfamily def main.\+G\+U\+I.\+show\+\_\+dialog (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Opening a new error window with a given error message.
+
+Args:
+    message (string): error text.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+py\end{DoxyCompactItemize}
